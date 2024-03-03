@@ -5,9 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../src/Assets/images/light-patten.svg');
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+.add-cart
+{
+  opacity:0;
+  transition:opacity .2s ease-in, transform  .2s linear;
+}
+.col-md-2:hover  .add-cart{
+opacity:1;
+transform:translateY(-1px);
 }
